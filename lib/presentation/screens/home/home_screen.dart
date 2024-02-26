@@ -1,4 +1,5 @@
 import 'package:app_widgets/config/menuItems/menu_items.dart';
+import 'package:app_widgets/presentation/screens/buttons/buttons_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -63,6 +64,13 @@ class _CustomListTile extends StatelessWidget {
           subtitle: Text(itemsMenu.subTitle),
           trailing:  Icon(Icons.arrow_forward_ios_rounded,color: colors.primary,),
           onTap: (){
+           // Navigator.of(context).push(
+            //    MaterialPageRoute(
+            //      builder: (context) => const ButtonsScreen(),
+           //     )
+            //);
+            //
+            Navigator.pushNamed(context, itemsMenu.link);           
 
           },
           
