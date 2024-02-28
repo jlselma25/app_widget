@@ -41,7 +41,14 @@ class MenuItems {
         subTitle:'Generales y controlados' , 
         link: '/progress', 
         icon: Icons.refresh_rounded,
-          name: 'progress_screen')
+          name: 'progress_screen'),
+
+        MenuItems(
+        title: 'Snackbars and dialogs', 
+        subTitle:'Indicators screen' , 
+        link: '/snackbar', 
+        icon: Icons.info_outline,
+          name: 'snackbar_screen')
 
 ];
 
