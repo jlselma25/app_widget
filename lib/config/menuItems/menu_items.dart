@@ -37,3 +37,4 @@ class MenuItems {
           name: 'cards_screen')
 
 ];
+

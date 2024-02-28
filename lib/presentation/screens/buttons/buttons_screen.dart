@@ -60,7 +60,7 @@ class _ButtonsView extends StatelessWidget {
             OutlinedButton.icon(onPressed: (){}, icon: const Icon(Icons.add_a_photo_rounded), label: const Text('OutLine Icon')),
             TextButton(onPressed: (){}, child: const Text('TextButton')),
             TextButton.icon(onPressed: (){}, icon: const Icon(Icons.terminal), label: const Text('TextButton Icon')),
-            IconButton(onPressed: (){}, icon: const Icon(Icons.app_registration_rounded)),
+            IconButton(onPressed: (){} , icon: const Icon(Icons.app_registration_rounded)),
             IconButton(
               onPressed: (){}, 
               icon: const Icon(Icons.app_registration_rounded),
@@ -71,7 +71,7 @@ class _ButtonsView extends StatelessWidget {
               ),
               ),
 
-              CustonButton(colorTheme: colors)
+              _CustonButton(colorTheme: colors)
           ],
         ),
       
@@ -81,9 +81,9 @@ class _ButtonsView extends StatelessWidget {
 }
 
 
-class CustonButton extends StatelessWidget {
+class _CustonButton extends StatelessWidget {
   final ColorScheme colorTheme;
-  const CustonButton({super.key, required this.colorTheme});
+  const _CustonButton({super.key, required this.colorTheme});
 
   @override
   Widget build(BuildContext context) {
