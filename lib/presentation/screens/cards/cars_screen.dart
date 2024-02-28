@@ -33,16 +33,22 @@ class CardsScreen extends StatelessWidget {
 }
 
 class _CardsView extends StatelessWidget {
+
+
   const _CardsView();
 
   @override
   Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+
     return  SingleChildScrollView(
       child: Column(
       
           children: [
       
-                ...cards.map((value) => _CardType1(label: value['label'],elevation: value['elevation']))
+                ...cards.map((value) => _CardType1(label: value['label'],elevation: value['elevation'])),
+                ...cards.map((value) => _CardType2(label: value['label'],elevation: value['elevation'],color: colors,))
       
           ],
       
@@ -83,6 +89,57 @@ class _CardType1 extends StatelessWidget {
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Text(label),
+                )
+            ]
+
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+class _CardType2 extends StatelessWidget {
+  final String label;
+  final double elevation;
+  final ColorScheme color;
+
+  const _CardType2({ 
+    required this.label, 
+    required this.elevation,
+   required this.color
+    });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius:  const BorderRadius.all(Radius.circular(12)) ,//BorderRadius.circular(12),
+        side: BorderSide(
+          color: color.outline
+
+        )
+      ),
+
+      elevation: elevation,
+      child:  Padding(
+        padding: const EdgeInsets.fromLTRB(10, 5, 10, 10),
+        child: Column(
+            children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: IconButton(
+                    onPressed: (){
+
+                    },                    
+                    icon: const Icon(Icons.more_vert_outlined)
+                    )
+                ),
+                Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Text('$label - card type2'),
                 )
             ]
 
