@@ -69,10 +69,35 @@ class _ButtonsView extends StatelessWidget {
                 iconColor: const MaterialStatePropertyAll(Colors.white),
                
               ),
-              )
+              ),
+
+              CustonButton(colorTheme: colors)
           ],
         ),
       
+      ),
+    );
+  }
+}
+
+
+class CustonButton extends StatelessWidget {
+  final ColorScheme colorTheme;
+  const CustonButton({super.key, required this.colorTheme});
+
+  @override
+  Widget build(BuildContext context) {
+    return  ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colorTheme.primary,
+        child:  InkWell(
+          onTap: (){},
+          child:  const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+            child: Text('Custom button',style: TextStyle(color: Colors.white),),
+          ),
+        ),
       ),
     );
   }
