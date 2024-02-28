@@ -34,7 +34,14 @@ class MenuItems {
         subTitle:'Un contenedor estilizado' , 
         link: '/cards', 
         icon: Icons.credit_card,
-          name: 'cards_screen')
+          name: 'cards_screen'),
+
+        MenuItems(
+        title: 'Progress indicator', 
+        subTitle:'Generales y controlados' , 
+        link: '/progress', 
+        icon: Icons.refresh_rounded,
+          name: 'progress_screen')
 
 ];
 
