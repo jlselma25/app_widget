@@ -50,12 +50,19 @@ class MenuItems {
         icon: Icons.info_outline,
           name: 'snackbar_screen'),
 
-         MenuItems(
+        MenuItems(
         title: 'Animated container', 
         subTitle:'Stateful widget animado' , 
         link: '/animated', 
         icon: Icons.check_box_outline_blank_rounded,
-          name: 'animated_screen')
+          name: 'animated_screen'),
+
+        MenuItems(
+        title: 'UI Controls + Tiles ', 
+        subTitle:'A controls serie of Flutter' , 
+        link: '/ui-controls', 
+        icon: Icons.car_rental_outlined,
+          name: 'ui_controls_screen')
 
 ];
 
