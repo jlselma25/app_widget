@@ -48,7 +48,14 @@ class MenuItems {
         subTitle:'Indicators screen' , 
         link: '/snackbar', 
         icon: Icons.info_outline,
-          name: 'snackbar_screen')
+          name: 'snackbar_screen'),
+
+         MenuItems(
+        title: 'Animated container', 
+        subTitle:'Stateful widget animado' , 
+        link: '/animated', 
+        icon: Icons.check_box_outline_blank_rounded,
+          name: 'animated_screen')
 
 ];
 
