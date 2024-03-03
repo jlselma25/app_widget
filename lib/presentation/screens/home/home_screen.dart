@@ -22,10 +22,6 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _HomeView extends StatelessWidget {
-
-
-
- 
     
 
   @override
