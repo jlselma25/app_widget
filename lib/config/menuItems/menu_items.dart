@@ -69,7 +69,15 @@ class MenuItems {
         subTitle:'Little tutorial of app' , 
         link: '/tutorial', 
         icon: Icons.accessible_rounded,
-          name: 'tutorial_screen')
+          name: 'tutorial_screen'),
+
+
+         MenuItems(
+        title: 'Infinite Scroll and Pull ', 
+        subTitle:'Infinite lists and pull to refresh' , 
+        link: '/scroll', 
+        icon: Icons.list_alt_rounded,
+          name: 'scroll_screen')
 
 ];
 

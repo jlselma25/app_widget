@@ -1,4 +1,5 @@
 import 'package:app_widgets/presentation/screens/screens.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 // GoRouter configuration
@@ -51,6 +52,12 @@ final appRouterName = GoRouter(
       path: '/tutorial',
       name:ApptutorialScreen.name,
       builder: (context, state) => const ApptutorialScreen(),
+    ),
+
+        GoRoute(
+      path: '/scroll',
+      name:InfiniteScrollScreen.name,
+      builder: (context, state) => const InfiniteScrollScreen (),
     ),
   ],
 );
