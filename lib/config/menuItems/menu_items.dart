@@ -22,6 +22,13 @@ class MenuItems {
 
    const List<MenuItems> appMenuItems =[
 
+    MenuItems(
+        title: 'Counter Rivepod', 
+        subTitle:'Riverpod introduction' , 
+        link: '/counter', 
+        icon: Icons.add,
+        name: 'counter_screen'),
+
      MenuItems(
         title: 'Botonos', 
         subTitle:'Varios botones en flutter' , 

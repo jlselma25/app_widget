@@ -1,3 +1,4 @@
+export'package:app_widgets/presentation/screens/counter/counter_screen.dart';
 export 'package:app_widgets/presentation/screens/animated/animate.dart';
 export 'package:app_widgets/presentation/screens/app_tutorial_screen/aap_tutotial_screen.dart';
 export 'package:app_widgets/presentation/screens/infinite_scroll/infinite_scroll_screen.dart';
